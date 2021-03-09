@@ -1,0 +1,141 @@
+.grid-container{
+  display: grid;
+  grid-gap: 3.6vw;
+  grid-template-columns:1fr;
+
+  grid-template-areas:
+  "weericon"
+  "weer"
+  "tijd"
+  "dag"
+  "datum";
+
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.grid-item1{
+  grid-area:weericon;
+  background-color: pink;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 4vw;
+}
+.grid-item2{
+  grid-area:weer;
+  background-color: pink;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.grid-item3{
+  grid-area:tijd;
+  background-color: pink;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.grid-item4{
+  grid-area:dag;
+  background-color: pink;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.grid-item5{
+  grid-area:datum;
+  background-color: pink;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+/* .flex-item2, .flex-item3{
+  display: flex;
+  flex-flow: column;
+}
+.uren, .minuten, .seconden{
+  display: flex;
+  flex-flow: row;
+  /* deze moet hier nog blijven omdat alles in aparte h1 staat
+}*/
+
+@media only screen and (min-width: 834px) and (max-width:1279px){
+ .grid-container {
+    display: grid;
+    grid-gap:3vw;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+    "weericon weer"
+    "tijd tijd"
+    "dag datum";
+  }
+  .grid-item2{
+      margin-top: 4vw;
+  }
+  /* .uren, .minuten{
+    display: flex;
+    flex-flow: row;
+  }
+  .seconden{
+    display: flex;
+    flex-flow:column;
+  } */
+  /* .flex-item1, .flex-item2, .flex-item3{
+    display: flex;
+    flex-flow: row;
+  }
+  .uren, .minuten, .seconden{
+    display: flex;
+    flex-flow: row;
+    /* deze moet hier nog blijven omdat alles in aparte h1 staat
+  } */
+}
+@media only screen and (min-width: 1280px) and (max-width:1919px){
+  .grid-container {
+       display: grid;
+       grid-gap:3vw;
+       grid-template-columns: 1fr 1fr;
+
+       grid-template-areas:
+       "weericon weer"
+       "tijd tijd"
+       "dag datum";
+     }
+     .grid-item2{
+         margin-top: 4vw;
+     }
+     /* .flex-item1, .flex-item2, .flex-item3{
+       display: flex;
+       flex-flow: row;
+     }
+     .uren, .minuten, .seconden{
+       display: flex;
+       flex-flow: row;
+       /* deze moet hier nog blijven omdat alles in aparte h1 staat
+     } */
+
+
+}
+@media only screen and (min-width: 1920px) {
+  .grid-container {
+     display: grid;
+     grid-gap:3vw;
+     grid-template-columns: 1fr 1fr;
+
+     grid-template-areas:
+     "weericon weer"
+     "tijd tijd"
+     "dag datum";
+   }
+   .grid-item2{
+       margin-top: 4vw;
+   }
+   /* .flex-item1, .flex-item2, .flex-item3{
+     display: flex;
+     flex-flow: row;
+   }
+   .uren, .minuten, .seconden{
+     display: flex;
+     flex-flow: row;
+     /* deze moet hier nog blijven omdat alles in aparte h1 staat
+   } */
+
+}
