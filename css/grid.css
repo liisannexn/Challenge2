@@ -3,6 +3,15 @@
   grid-gap: 3.6vw;
   grid-template-columns:1fr;
 
+  /* grid-template-areas:
+  "weericon"
+  "weer"
+  "uur"
+  "mins"
+  "sec"
+  "dag"
+  "datum"; */
+
   grid-template-areas:
   "weericon"
   "weer"
@@ -17,7 +26,6 @@ body{
 }
 .grid-item1{
   grid-area:weericon;
-  background-color: pink;
   margin-left: 3vw;
   margin-right: 3vw;
   margin-top: 4vw;
@@ -46,15 +54,6 @@ body{
   margin-left: 3vw;
   margin-right: 3vw;
 }
-/* .flex-item2, .flex-item3{
-  display: flex;
-  flex-flow: column;
-}
-.uren, .minuten, .seconden{
-  display: flex;
-  flex-flow: row;
-  /* deze moet hier nog blijven omdat alles in aparte h1 staat
-}*/
 
 @media only screen and (min-width: 834px) and (max-width:1279px){
  .grid-container {
@@ -63,30 +62,14 @@ body{
     grid-template-columns: 1fr 1fr;
 
     grid-template-areas:
-    "weericon weer"
+    "weericon weericon"
+    "weer weer"
     "tijd tijd"
     "dag datum";
   }
   .grid-item2{
-      margin-top: 4vw;
+      margin-top: 0vw;
   }
-  /* .uren, .minuten{
-    display: flex;
-    flex-flow: row;
-  }
-  .seconden{
-    display: flex;
-    flex-flow:column;
-  } */
-  /* .flex-item1, .flex-item2, .flex-item3{
-    display: flex;
-    flex-flow: row;
-  }
-  .uren, .minuten, .seconden{
-    display: flex;
-    flex-flow: row;
-    /* deze moet hier nog blijven omdat alles in aparte h1 staat
-  } */
 }
 @media only screen and (min-width: 1280px) and (max-width:1919px){
   .grid-container {
@@ -102,16 +85,6 @@ body{
      .grid-item2{
          margin-top: 4vw;
      }
-     /* .flex-item1, .flex-item2, .flex-item3{
-       display: flex;
-       flex-flow: row;
-     }
-     .uren, .minuten, .seconden{
-       display: flex;
-       flex-flow: row;
-       /* deze moet hier nog blijven omdat alles in aparte h1 staat
-     } */
-
 
 }
 @media only screen and (min-width: 1920px) {
@@ -128,14 +101,5 @@ body{
    .grid-item2{
        margin-top: 4vw;
    }
-   /* .flex-item1, .flex-item2, .flex-item3{
-     display: flex;
-     flex-flow: row;
-   }
-   .uren, .minuten, .seconden{
-     display: flex;
-     flex-flow: row;
-     /* deze moet hier nog blijven omdat alles in aparte h1 staat
-   } */
 
 }
