@@ -47,3 +47,22 @@ if (dayOrNight > 6 && dayOrNight <= 18) {
 // if (dayOrNight < 6 && dayOrNight >= 18) {
 //   document.body.style.backgroundImage = "url('css/images/earthday.jpg')";
 // }
+
+// het tonen van de achtergrond afbeelding
+if (dayOrNight >= 6 && dayOrNight < 18) {
+  document.body.style.background = "url('css/images/earth4.png')";
+} else {
+  document.body.style.background = "url('css/images/earthnight.jpg')";
+}
+
+if (dayOrNight >= 6 && dayOrNight < 18) {
+  document.body.style.background = "url('css/images/earth4.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "150%"
+  document.body.style.backgroundAttachment = "fixed";
+} else {
+  document.body.style.background = "url('css/images/earthnight.jpg')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "150%"
+  document.body.style.backgroundAttachment = "fixed";
+}
