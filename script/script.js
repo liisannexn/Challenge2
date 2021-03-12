@@ -39,14 +39,22 @@ if (dayOrNight > 6 && dayOrNight <= 18) {
   document.getElementById("zon").src = "css/images/moon.png";
 }
 
+// het tonen van de achtergrond afbeelding
+if (dayOrNight >= 6 && dayOrNight < 18) {
+    document.body.style.background = "url('css/images/earthday/earthday.png')";
+} else {
+ document.body.style.background = "url('css/images/earthnight/earthnight.jpg')";
+}
+// het geven van waarden aan de achtergrond
+if (dayOrNight >= 6 && dayOrNight < 18) {
+  document.body.style.background = "url('css/images/earthday/earthday.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "140em"
+  document.body.style.backgroundPosition ="center";
+} else {
+document.body.style.background = "url('css/images/earthnight/earthnight.jpg')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "140em"
+  document.body.style.backgroundPosition ="center";
 
-
-
-// hiermee achtergrond afbeelding veranderen
-var seconds = 0;
-var stopwatchHandle;
-
-function updateStopwatch(){
-	seconds += 1;
-	document.getElementById('stopwatch').innerHTML = seconds + ' seconds';
 }
