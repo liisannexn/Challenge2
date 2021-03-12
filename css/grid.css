@@ -3,56 +3,52 @@
   grid-gap: 3.6vw;
   grid-template-columns:1fr;
 
-  /* grid-template-areas:
-  "weericon"
-  "weer"
-  "uur"
-  "mins"
-  "sec"
-  "dag"
-  "datum"; */
-
   grid-template-areas:
-  "weericon"
-  "weer"
+  "logo"
+  "title"
   "tijd"
   "dag"
-  "datum";
+  "datum"
+  "weericon"
+  "weer";
 
 }
 body{
   margin: 0;
   padding: 0;
 }
+.grid-itemlogo{
+  grid-area:logo;
+}
+.grid-itemtitle{
+  grid-area:title;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
 .grid-item1{
   grid-area:weericon;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  margin-top: 4vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .grid-item2{
   grid-area:weer;
-  background-color: pink;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .grid-item3{
   grid-area:tijd;
-  background-color: pink;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .grid-item4{
   grid-area:dag;
-  background-color: pink;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .grid-item5{
   grid-area:datum;
-  background-color: pink;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 @media only screen and (min-width: 834px) and (max-width:1279px){
@@ -62,10 +58,11 @@ body{
     grid-template-columns: 1fr 1fr;
 
     grid-template-areas:
-    "weericon weericon"
-    "weer weer"
+    "logo title"
+    "weericon weer"
     "tijd tijd"
     "dag datum";
+
   }
   .grid-item2{
       margin-top: 0vw;
@@ -78,9 +75,11 @@ body{
        grid-template-columns: 1fr 1fr;
 
        grid-template-areas:
+       "logo title"
        "weericon weer"
        "tijd tijd"
        "dag datum";
+
      }
      .grid-item2{
          margin-top: 4vw;
@@ -94,9 +93,11 @@ body{
      grid-template-columns: 1fr 1fr;
 
      grid-template-areas:
+     "logo title"
      "weericon weer"
      "tijd tijd"
      "dag datum";
+
    }
    .grid-item2{
        margin-top: 4vw;

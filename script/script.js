@@ -3,9 +3,6 @@ var today = new Date();
 var seconds = addLeadingZero(today.getSeconds());
 var minutes = addLeadingZero(today.getMinutes());
 
-// document.getElementById('uren').innerHTML = today.getHours() + 'h' ;
-// document.getElementById('mins').innerHTML = minutes + 'm' ;
-// document.getElementById('sec').innerHTML = seconds + 's' ;
 document.getElementById('clock').innerHTML = today.getHours() + 'h' + ':' +  minutes + 'm' +  ':' + seconds + 's' ;
 function addLeadingZero(number) {
     if(number < 10){
@@ -31,7 +28,6 @@ if (new Date().getHours() > 6 && new Date().getHours() < 18) {
 else {
   document.getElementById("weer").innerHTML = "Nacht";
 }
-
 //de afbeelding voor de zon en de maan weergeven
 var rightNow = new Date();
 var dayOrNight = rightNow.getHours();
@@ -40,29 +36,17 @@ if (dayOrNight > 6 && dayOrNight <= 18) {
   document.getElementById("zon").src = "css/images/zon.png";
   // document.body.style.backgroundImage = "url('../css/images/daglicht.jpg')";
 } else {
-  document.getElementById("zon").src = "css/images/maan.png";
+  document.getElementById("zon").src = "css/images/moon.png";
 }
 
-// // document.body.style.backgroundImage = "url('css/images/daglicht.jpg')";
-// if (dayOrNight < 6 && dayOrNight >= 18) {
-//   document.body.style.backgroundImage = "url('css/images/earthday.jpg')";
-// }
 
-// het tonen van de achtergrond afbeelding
-if (dayOrNight >= 6 && dayOrNight < 18) {
-  document.body.style.background = "url('css/images/earth4.png')";
-} else {
-  document.body.style.background = "url('css/images/earthnight.jpg')";
-}
 
-if (dayOrNight >= 6 && dayOrNight < 18) {
-  document.body.style.background = "url('css/images/earth4.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "150%"
-  document.body.style.backgroundAttachment = "fixed";
-} else {
-  document.body.style.background = "url('css/images/earthnight.jpg')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "150%"
-  document.body.style.backgroundAttachment = "fixed";
+
+// hiermee achtergrond afbeelding veranderen
+var seconds = 0;
+var stopwatchHandle;
+
+function updateStopwatch(){
+	seconds += 1;
+	document.getElementById('stopwatch').innerHTML = seconds + ' seconds';
 }

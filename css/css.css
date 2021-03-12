@@ -21,11 +21,12 @@ body {
 }
 body::after {
     content: "";
-    background-image: '';
+    background-image:url('images/earthday/earthday-telefoon.png');
+		background-image:url('images/earthnight/earthnight-telefoon.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 200%;
+    background-size: 100%;
     top:0;
     left: 0;
     bottom: 0;
@@ -33,25 +34,131 @@ body::after {
     position: absolute;
     z-index: -1;
 }
-p{
-	margin-left: 8vw;
-	font-size: 2.5em;
+h1{
+	color:white;
+	font-family: 'Kefa', arial, sans-serif;
+}
+p, h1#clock{
+	font-family: 'Kefa', arial, sans-serif;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	color:white;
+	text-align: center;
 }
-
+.grid-item2, .grid-item3, .grid-item4, .grid-item5{
+	background-color: black;
+	background: rgba(0, 0, 0, 0.5)
+}
+h1#title{
+	font-size: 3em;
+	text-align: center;
+}
+h1#clock{
+	font-size: 2.5em;
+}
+p#dag{
+	font-size: 2.5em;
+}
+p#datum{
+	font-size: 2.5em;
+}
+p#weer{
+	font-size: 2.5em;
+}
+#spacelogo{
+	width: 40vw;
+	height: auto;
+	margin:2vw;
+}
 @media only screen and (min-width: 834px) and (max-width:1279px){
-
+	body::after {
+	    content: "";
+	    background-image:url('images/earthday/earthday-tablet.png');
+			background-image:url('images/earthnight/earthnight-tablet.jpg');
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-size: 130%;
+	    top:0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    position: absolute;
+	    z-index: -1;
+	}
 }
 @media only screen and (min-width: 1280px) and (max-width:1919px){
-	p{
-		margin-left: 8vw;
+
+	h1{
+		color:white;
+		font-family: 'Kefa', arial, sans-serif;
+	}
+	p, h1#clock{
+		font-family: 'Kefa', arial, sans-serif;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		color:white;
+		text-align: center;
+	}
+	.grid-item2, .grid-item3, .grid-item4, .grid-item5{
+		background-color: black;
+		background: rgba(0, 0, 0, 0.5)
+	}
+	h1#title{
+		font-size: 3em;
+		text-align: center;
+	}
+	h1#clock{
 		font-size: 2.5em;
+	}
+	p#dag{
+		font-size: 2.5em;
+	}
+	p#datum{
+		font-size: 2.5em;
+	}
+	p#weer{
+		font-size: 2.5em;
+	}
+	#spacelogo{
+		width: 40vw;
+		height: auto;
+		margin:2vw;
+	}
+	body{
+	    content: "";
+			background-image:url('images/earthday/earthday-kdekstop.png');
+		 background-image:url('images/earthnight/earthnight-kdesktop.jpg');
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-size: 180%;
+	    top:0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    position: absolute;
+	    z-index: -1;
 	}
 }
 @media only screen and (min-width: 1920px) {
 	p{
 		margin-left: 8vw;
 		font-size: 2.5em;
+	}
+	body::after {
+	    content: "";
+	    background-image:url('images/earthday/earthday.png');
+			background-image:url('images/earthnight/earthnight.jpg');
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-size: 170%;
+	    top:0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    position: absolute;
+	    z-index: -1;
 	}
 }
