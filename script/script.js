@@ -28,14 +28,16 @@ document.getElementById('dag').innerHTML =  dagen[today.getDay()];
 var maanden = new Array('januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december');
 document.getElementById('datum').innerHTML = today.getDate()  + ' ' +  maanden[today.getMonth()] + ' ' +  today.getFullYear();;
 
-//het is overdag
+
+// //het is overdag
 if (new Date().getHours() > 6 && new Date().getHours() < 18) {
   document.getElementById("weer").innerHTML = "Zonnig";
 }
 // het is nacht
 else {
   document.getElementById("weer").innerHTML = "Nacht";
-}
+  }
+
 //de afbeelding voor de zon en de maan weergeven
 var rightNow = new Date();
 var dayOrNight = rightNow.getHours();
@@ -49,7 +51,7 @@ if (dayOrNight > 6 && dayOrNight <= 18) {
 
 // het tonen van de achtergrond afbeelding
 if (dayOrNight >= 6 && dayOrNight < 18) {
-    document.body.style.background = "url('css/images/earthday/earthday.png')";
+  document.body.style.background = "url('css/images/earthday/earthday.png')";
 } else{
  document.body.style.background = "url('css/images/earthnight/earthnight.jpg')";
 }
@@ -66,3 +68,9 @@ document.body.style.background = "url('css/images/earthnight/earthnight.jpg')";
   document.body.style.backgroundPosition ="center";
 
 }
+
+
+// 
+// var mainHeading = document.getElementById('weer');
+//
+// mainHeading.classList.add('changesSize');

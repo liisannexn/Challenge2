@@ -20,7 +20,7 @@ h1#title{
 	font-size: 10vw;
 	text-align: center;
 }
-h1#clock, p#dag, p#datum, p#weer{
+h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	font-size: 6vw;
 }
 #spacelogo{
@@ -36,6 +36,38 @@ h1#clock, p#dag, p#datum, p#weer{
   margin-left: auto;
   margin-right: auto
 }
+/* .grid-item2{
+	position: relative;
+	width:40vw;
+	height:10vh;
+	overflow: hidden;
+}
+#weer {
+	color:white;
+	transition-duration: 3s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* #weer.changesSize {
+	color:red;
+	transition-duration: 100s;
+}
+#weer2{
+	position: absolute;
+	top: 100px;
+	left: 320px;
+	animation: 100ms pulsate infinite alternate ease-in-out;
+}
+@keyframes pulsate {
+  0% {
+  	top: 75px;
+  }
+  100% {
+  	top: 90px;
+  }*/
+
+
 @media only screen and (min-width: 834px) and (max-width:1279px){
 	#spacelogo{
 		width: 40vw;
