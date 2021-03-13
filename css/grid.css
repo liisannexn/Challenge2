@@ -12,6 +12,7 @@
   "weericon"
   "weer";
 
+  margin-bottom: 10vw;
 }
 body{
   margin: 0;
@@ -32,23 +33,27 @@ body{
 }
 .grid-item2{
   grid-area:weer;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  /* height:15vh; */
 }
 .grid-item3{
   grid-area:tijd;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  /* height:15vh; */
 }
 .grid-item4{
   grid-area:dag;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  /* height:15vh; */
 }
 .grid-item5{
   grid-area:datum;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  /* height:15vh; */
 }
 
 @media only screen and (min-width: 834px) and (max-width:1279px){
@@ -64,14 +69,40 @@ body{
     "dag datum";
 
   }
+  /* het weer */
   .grid-item2{
-      margin-top: 0vw;
+      display: block;
+      margin-top:19vw;
+      margin-bottom: auto;
+      width:auto;
+      margin-left: -15vw;
+      margin-left: 9vw;
+  }
+  /* de tijd */
+  .grid-item3{
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+  }
+  /* de dag */
+  .grid-item4{
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top:5vw;
+  }
+  /* de datum */
+  .grid-item5{
+    grid-area:datum;
+    margin-left: -7vw;
+    margin-right: 10vw;
+    margin-top:5vw;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width:1919px){
   .grid-container {
        display: grid;
-       grid-gap:3vw;
+       grid-gap:1vw;
        grid-template-columns: 1fr 1fr;
 
        grid-template-areas:
@@ -81,10 +112,35 @@ body{
        "dag datum";
 
      }
+     /* het weer */
      .grid-item2{
-         margin-top: 4vw;
+         display: block;
+         margin-top:7vw;
+         margin-bottom: auto;
+         width:auto;
+         margin-left: -15vw;
+         margin-left: 9vw;
      }
-
+     /* de tijd */
+     .grid-item3{
+       margin-left: 35vw;
+       margin-right: 35vw;
+       margin-top: -3vw;
+       margin-bottom: -2vw;
+     }
+     /* de dag */
+     .grid-item4{
+       margin-left: 15vw;
+       margin-right: 13vw;
+       margin-top:5vw;
+     }
+     /* de datum */
+     .grid-item5{
+       grid-area:datum;
+       margin-left: 7vw;
+       margin-right: 10vw;
+       margin-top:5vw;
+     }
 }
 @media only screen and (min-width: 1920px) {
   .grid-container {

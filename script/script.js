@@ -1,16 +1,24 @@
 var today = new Date();
 
-var seconds = addLeadingZero(today.getSeconds());
-var minutes = addLeadingZero(today.getMinutes());
+function liveTijd(){
+  var today = new Date();
 
-document.getElementById('clock').innerHTML = today.getHours() + 'h' + ':' +  minutes + 'm' +  ':' + seconds + 's' ;
-function addLeadingZero(number) {
-    if(number < 10){
-        return '0' + number;
-    }
-    return number
+  var seconds = addLeadingZero(today.getSeconds());
+  var minutes = addLeadingZero(today.getMinutes());
+
+  document.getElementById('clock').innerHTML = today.getHours() + ':' +  minutes +  ':' + seconds ;
+
+  function addLeadingZero(number) {
+      if(number < 10){
+          return '0' + number;
+      }
+      return number
+  }
 }
 
+var timevar = setInterval(liveTijd, 1000);
+
+liveTijd();
 //dag van de week
 var dagen = new Array('Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag');
 // ervoor zorgen dat er 1 minder komt.
@@ -22,7 +30,7 @@ document.getElementById('datum').innerHTML = today.getDate()  + ' ' +  maanden[t
 
 //het is overdag
 if (new Date().getHours() > 6 && new Date().getHours() < 18) {
-  document.getElementById("weer").innerHTML = "Overdag, Zonnig ";
+  document.getElementById("weer").innerHTML = "Zonnig";
 }
 // het is nacht
 else {
@@ -42,19 +50,19 @@ if (dayOrNight > 6 && dayOrNight <= 18) {
 // het tonen van de achtergrond afbeelding
 if (dayOrNight >= 6 && dayOrNight < 18) {
     document.body.style.background = "url('css/images/earthday/earthday.png')";
-} else {
+} else{
  document.body.style.background = "url('css/images/earthnight/earthnight.jpg')";
 }
-// het geven van waarden aan de achtergrond
+//het geven van waarden aan de achtergrond
 if (dayOrNight >= 6 && dayOrNight < 18) {
   document.body.style.background = "url('css/images/earthday/earthday.png')";
   document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "140em"
+  document.body.style.backgroundSize = "130em";
   document.body.style.backgroundPosition ="center";
-} else {
+} else{
 document.body.style.background = "url('css/images/earthnight/earthnight.jpg')";
   document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "140em"
+  document.body.style.backgroundSize = "130em";
   document.body.style.backgroundPosition ="center";
 
 }

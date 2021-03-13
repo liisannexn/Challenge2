@@ -8,75 +8,157 @@ h1{
 }
 p, h1#clock{
 	font-family: 'Kefa', arial, sans-serif;
-	margin-top: 1em;
-	margin-bottom: 1em;
 	color:white;
 	text-align: center;
+	margin-top:1em;
 }
 .grid-item2, .grid-item3, .grid-item4, .grid-item5{
 	background-color: black;
 	background: rgba(0, 0, 0, 0.5)
 }
 h1#title{
-	font-size: 3em;
+	font-size: 10vw;
 	text-align: center;
 }
-h1#clock{
-	font-size: 2.5em;
-}
-p#dag{
-	font-size: 2.5em;
-}
-p#datum{
-	font-size: 2.5em;
-}
-p#weer{
-	font-size: 2.5em;
+h1#clock, p#dag, p#datum, p#weer{
+	font-size: 6vw;
 }
 #spacelogo{
 	width: 40vw;
 	height: auto;
 	margin:2vw;
 }
-@media only screen and (min-width: 834px) and (max-width:1279px){
+/* afbeelding zon of maan */
+#zon{
+	width: 50vw;
+	height:auto;
+	display: block;
+  margin-left: auto;
+  margin-right: auto
 }
-@media only screen and (min-width: 1280px) and (max-width:1919px){
-
-	h1{
-		color:white;
-		font-family: 'Kefa', arial, sans-serif;
-	}
-	p, h1#clock{
-		font-family: 'Kefa', arial, sans-serif;
-		margin-top: 1em;
-		margin-bottom: 1em;
-		color:white;
-		text-align: center;
-	}
-	.grid-item2, .grid-item3, .grid-item4, .grid-item5{
-		background-color: black;
-		background: rgba(0, 0, 0, 0.5)
-	}
-	h1#title{
-		font-size: 3em;
-		text-align: center;
-	}
-	h1#clock{
-		font-size: 2.5em;
-	}
-	p#dag{
-		font-size: 2.5em;
-	}
-	p#datum{
-		font-size: 2.5em;
-	}
-	p#weer{
-		font-size: 2.5em;
-	}
+@media only screen and (min-width: 834px) and (max-width:1279px){
 	#spacelogo{
 		width: 40vw;
 		height: auto;
-		margin:2vw;
+		margin:3vw 0vw 0vw 3vw;
+	}
+	h1#title{
+		font-size: 5vw;
+		text-align:right;
+		margin:3vw 3vw 0vw 0vw;
+	}
+	h1#clock{
+		font-size: 7vw;
+		margin-bottom: -0.3em;
+		margin-top: 0em;
+	}
+	p#dag{
+		font-size: 5vw;
+		margin-top:0.3em;
+		margin-bottom:0.3em;
+	}
+	p#datum{
+		font-size: 5vw;
+		margin-top:0.3em;
+		margin-bottom:0.3em;
+	}
+	p#weer{
+		font-size: 5vw;
+		margin-top:0.3em;
+		margin-bottom:0.3em;
+		margin-left:0.5em;
+		margin-right:0.5em;
+	}
+	/* afbeelding zon of maan */
+	#zon{
+		width: 35vw;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2vw;
+	}
+	/* #spacelogo{
+		width: 40vw;
+		height: auto;
+		margin:3vw 0vw 0vw 3vw;
+	}
+	h1#title{
+		font-size: 5vw;
+		text-align:right;
+		margin:3vw 3vw 0vw 0vw;
+	}
+	h1#clock{
+		font-size: 10vw;
+		margin-bottom: -0.3em;
+		margin-top: 0em;
+	}
+	p#dag{
+		font-size: 7vw;
+		margin-top:0.3em;
+		margin-bottom:0.3em;
+	}
+	p#datum{
+		font-size: 7vw;
+		margin-top:0.3em;
+		margin-bottom:0.3em;
+	}
+	p#weer{
+		font-size: 7vw;
+		margin-top:0.3em;
+		margin-bottom:0.3em;
+		margin-left:0.5em;
+		margin-right:0.5em;
+	}
+	/* afbeelding zon of maan
+	#zon{
+		width: 40vw;
+		display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+		margin-top: 6vw;
+	} */
+}
+@media only screen and (min-width: 1280px) and (max-width:1919px){
+	#spacelogo{
+		width: 25vw;
+		height: auto;
+		margin:1.5vw 0vw 0vw 3vw;
+	}
+	h1#title{
+		font-size: 3vw;
+		text-align:right;
+		margin:1.5vw -1vw 0vw 0vw;
+	}
+	h1#clock{
+		font-size: 5vw;
+		margin-bottom: -0.3em;
+		margin-top: 0em;
+	}
+	p#dag{
+		font-size: 3vw;
+		margin-top:0.2em;
+		margin-bottom:-0.2em;
+	}
+	p#datum{
+		font-size: 3vw;
+		margin-top:0.2em;
+		margin-bottom:-0.2em;
+	}
+	p#weer{
+		font-size: 3vw;
+		margin-top:0.3em;
+		margin-bottom:0.3em;
+		margin-left:0.5em;
+		margin-right:0.5em;
+	}
+	/* afbeelding zon of maan */
+	#zon{
+		width: 20vw;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2vw;
+		margin-left: 6vw;
 	}
 }
 @media only screen and (min-width: 1920px) {
