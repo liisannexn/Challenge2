@@ -34,7 +34,8 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	height:auto;
 	display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+	animation: 10000ms pulsate infinite alternate ease-in-out;
 }
 /* .grid-item2{
 	position: relative;
@@ -58,14 +59,32 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	top: 100px;
 	left: 320px;
 	animation: 100ms pulsate infinite alternate ease-in-out;
-}
-@keyframes pulsate {
-  0% {
-  	top: 75px;
-  }
+}*/
+/* @keyframes pulsate {
   100% {
-  	top: 90px;
-  }*/
+  	transform: rotateZ(180deg);
+  }
+	100% {
+  	transform: rotateY(0deg);
+  } */
+  /* 25% {
+  	transform: rotate(0deg);
+  }
+	50%{
+		transform: rotate(10deg);
+	}
+	75%{
+		transform: rotate(0);
+	} */
+	/* 100%{
+		transform: rotate(90deg);
+	} */
+/* } */
+@keyframes pulsate {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+		
+}
 
 
 @media only screen and (min-width: 834px) and (max-width:1279px){

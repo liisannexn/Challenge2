@@ -43,10 +43,10 @@ var rightNow = new Date();
 var dayOrNight = rightNow.getHours();
 
 if (dayOrNight > 6 && dayOrNight <= 18) {
-  document.getElementById("zon").src = "css/images/zon.png";
+  document.getElementById("zon").src = "css/images/dayOrNight/Zon.png";
   // document.body.style.backgroundImage = "url('../css/images/daglicht.jpg')";
 } else {
-  document.getElementById("zon").src = "css/images/moon.png";
+  document.getElementById("zon").src = "css/images/dayOrNight/moon.png";
 }
 
 // het tonen van de achtergrond afbeelding
@@ -70,7 +70,7 @@ document.body.style.background = "url('css/images/earthnight/earthnight.jpg')";
 }
 
 
-// 
+//
 // var mainHeading = document.getElementById('weer');
 //
 // mainHeading.classList.add('changesSize');
