@@ -35,8 +35,13 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	display: block;
   margin-left: auto;
   margin-right: auto;
-	animation: 10000ms pulsate infinite alternate ease-in-out;
+	/* animation: 10000ms pulsate infinite alternate ease-in-out; */
 }
+/* @keyframes pulsate {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+
+} */
 /* .grid-item2{
 	position: relative;
 	width:40vw;
@@ -80,11 +85,7 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 		transform: rotate(90deg);
 	} */
 /* } */
-@keyframes pulsate {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
-		
-}
+
 
 
 @media only screen and (min-width: 834px) and (max-width:1279px){

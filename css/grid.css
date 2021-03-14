@@ -82,21 +82,21 @@ body{
   .grid-item3{
     margin-left: 25vw;
     margin-right: 25vw;
-    margin-top: 2vw;
+    margin-top: 8vw;
     margin-bottom: 4vw;
   }
   /* de dag */
   .grid-item4{
     margin-left: 7vw;
     margin-right: 7vw;
-    margin-top:5vw;
+    margin-top:8vw;
   }
   /* de datum */
   .grid-item5{
     grid-area:datum;
     margin-left: -7vw;
     margin-right: 10vw;
-    margin-top:5vw;
+    margin-top:8vw;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width:1919px){
@@ -132,14 +132,14 @@ body{
      .grid-item4{
        margin-left: 15vw;
        margin-right: 13vw;
-       margin-top:5vw;
+       margin-top:8vw;
      }
      /* de datum */
      .grid-item5{
        grid-area:datum;
        margin-left: 7vw;
        margin-right: 10vw;
-       margin-top:5vw;
+       margin-top:8vw;
      }
 }
 @media only screen and (min-width: 1920px) {
