@@ -22,6 +22,8 @@ h1#title{
 }
 h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	font-size: 6vw;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
 }
 #spacelogo{
 	width: 40vw;
