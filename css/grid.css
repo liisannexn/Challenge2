@@ -175,21 +175,21 @@ body{
    .grid-item3{
      margin-left: 35vw;
      margin-right: 35vw;
-     margin-top: -5vw;
+     margin-top: -6vw;
      margin-bottom: -2vw;
    }
    /* de dag */
    .grid-item4{
      margin-left: 15vw;
      margin-right: 13vw;
-     margin-top:3vw;
+     margin-top:2vw;
    }
    /* de datum */
    .grid-item5{
      grid-area:datum;
      margin-left: 7vw;
      margin-right: 10vw;
-     margin-top:3vw;
+     margin-top:2vw;
    }
 
 }
