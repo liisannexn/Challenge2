@@ -56,6 +56,7 @@ body{
   /* height:15vh; */
 }
 
+/* tablet */
 @media only screen and (min-width: 834px) and (max-width:1279px){
  .grid-container {
     display: grid;
@@ -99,6 +100,8 @@ body{
     margin-top:8vw;
   }
 }
+
+/* kleine desktop */
 @media only screen and (min-width: 1280px) and (max-width:1919px){
   .grid-container {
        display: grid;
@@ -115,17 +118,18 @@ body{
      /* het weer */
      .grid-item2{
          display: block;
-         margin-top:7vw;
+         margin-top:6vw;
          margin-bottom: auto;
          width:auto;
-         margin-left: -15vw;
-         margin-left: 9vw;
+         margin-right: 6vw;
+         margin-left: -19vw;
+         margin-left: 1vw;
      }
      /* de tijd */
      .grid-item3{
        margin-left: 35vw;
        margin-right: 35vw;
-       margin-top: -3vw;
+       margin-top: -2vw;
        margin-bottom: -2vw;
      }
      /* de dag */
@@ -142,6 +146,8 @@ body{
        margin-top:8vw;
      }
 }
+
+/* grote desktop */
 @media only screen and (min-width: 1920px) {
   .grid-container {
      display: grid;
@@ -155,8 +161,35 @@ body{
      "dag datum";
 
    }
+   /* het weer */
    .grid-item2{
-       margin-top: 4vw;
+       display: block;
+       margin-top:6vw;
+       margin-bottom: auto;
+       width:auto;
+       margin-left: -15vw;
+       margin-left: -10vw;
+       margin-right: 6vw;
+   }
+   /* de tijd */
+   .grid-item3{
+     margin-left: 35vw;
+     margin-right: 35vw;
+     margin-top: -5vw;
+     margin-bottom: -2vw;
+   }
+   /* de dag */
+   .grid-item4{
+     margin-left: 15vw;
+     margin-right: 13vw;
+     margin-top:5vw;
+   }
+   /* de datum */
+   .grid-item5{
+     grid-area:datum;
+     margin-left: 7vw;
+     margin-right: 10vw;
+     margin-top:5vw;
    }
 
 }

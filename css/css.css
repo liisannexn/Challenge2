@@ -214,8 +214,45 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	}
 }
 @media only screen and (min-width: 1920px) {
-	p{
-		margin-left: 8vw;
-		font-size: 2.5em;
+	#spacelogo{
+		width: 27vw;
+		height: auto;
+		margin:1.5vw 0vw 0vw 3vw;
+	}
+	h1#title{
+		font-size: 4vw;
+		text-align:right;
+		margin:1.5vw -1vw 0vw 0vw;
+	}
+	h1#clock{
+		font-size: 6vw;
+		margin-bottom: -0.3em;
+		margin-top: 0em;
+	}
+	p#dag{
+		font-size: 3.5vw;
+		margin-top:0.2em;
+		margin-bottom:-0.2em;
+	}
+	p#datum{
+		font-size:3.5vw;
+		margin-top:0.2em;
+		margin-bottom:-0.2em;
+	}
+	p#weer{
+		font-size: 3vw;
+		margin-top:0.3em;
+		margin-bottom:0.3em;
+		margin-left:0.5em;
+		margin-right:0.5em;
+	}
+	/* afbeelding zon of maan */
+	#zon{
+		width: 23vw;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:-2vw;
+		margin-left: 7vw;
 	}
 }
