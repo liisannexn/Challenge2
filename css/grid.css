@@ -182,14 +182,14 @@ body{
    .grid-item4{
      margin-left: 15vw;
      margin-right: 13vw;
-     margin-top:5vw;
+     margin-top:3vw;
    }
    /* de datum */
    .grid-item5{
      grid-area:datum;
      margin-left: 7vw;
      margin-right: 10vw;
-     margin-top:5vw;
+     margin-top:3vw;
    }
 
 }
