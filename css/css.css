@@ -19,11 +19,13 @@ p, h1#clock{
 h1#title{
 	font-size: 10vw;
 	text-align: center;
+	text-shadow: 1px 1px 7px #332E33;
 }
 h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	font-size: 6vw;
 	margin-top:0.5em;
 	margin-bottom:0.5em;
+	text-shadow: 1px 1px 7px #332E33;
 }
 #spacelogo{
 	width: 50vw;
