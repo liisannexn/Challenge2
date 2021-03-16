@@ -69,7 +69,7 @@ function tekstOverdag(size){
   }
   //het is nacht
   else if(size.matches){
-      document.getElementById("weer").innerHTML = "Nacht, overwegend bewolkt";
+      document.getElementById("weer").innerHTML = "Nacht, motregen en licht bewolkt";
   }
 
 };
@@ -94,11 +94,11 @@ if (dayOrNight > 6 && dayOrNight <= 18) {
 if (dayOrNight >= 6 && dayOrNight < 18) {
   document.body.style.background = "url('css/images/earthday/earthday.png')";
   document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "130em";
+  document.body.style.backgroundSize = "150em";
   document.body.style.backgroundPosition ="center";
 } else {
  document.body.style.background = "url('css/images/earthnight/earthnight.jpg')";
  document.body.style.backgroundRepeat = "no-repeat";
- document.body.style.backgroundSize = "130em";
+ document.body.style.backgroundSize = "150em";
  document.body.style.backgroundPosition ="center";
 }

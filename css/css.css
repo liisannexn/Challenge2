@@ -26,7 +26,7 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	margin-bottom:0.5em;
 }
 #spacelogo{
-	width: 40vw;
+	width: 50vw;
 	height: auto;
 	margin:2vw;
 }
@@ -38,8 +38,6 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 @media only screen and (min-width: 834px) and (max-width:1279px){
 	#spacelogo{
@@ -77,9 +75,6 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	/* afbeelding zon of maan */
 	#zon{
 		width: 35vw;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 		margin-top: 2vw;
 	}
 }
@@ -92,7 +87,7 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	h1#title{
 		font-size: 3vw;
 		text-align:right;
-		margin:1.5vw -1vw 0vw 0vw;
+		margin:1.5vw -3vw 0vw 0vw;
 	}
 	h1#clock{
 		font-size: 5vw;
@@ -119,9 +114,6 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	/* afbeelding zon of maan */
 	#zon{
 		width: 20vw;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 		margin-top: 2vw;
 		margin-left: 6vw;
 	}
@@ -133,9 +125,9 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 		margin:1.5vw 0vw 0vw 3vw;
 	}
 	h1#title{
-		font-size: 4vw;
+		font-size: 3.7vw;
 		text-align:right;
-		margin:1.5vw -1vw 0vw 0vw;
+		margin:1.5vw -3vw 0vw 0vw;
 	}
 	h1#clock{
 		font-size: 6vw;
@@ -162,9 +154,6 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	/* afbeelding zon of maan */
 	#zon{
 		width: 23vw;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 		margin-top:-2vw;
 		margin-left: 7vw;
 	}
