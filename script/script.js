@@ -49,7 +49,7 @@ if (size.matches && new Date().getHours() > 6 && new Date().getHours() < 18) {
 }
 // het is nacht
 else if(size.matches){
-  document.getElementById("weer").innerHTML = "Nacht";
+  document.getElementById("weer").innerHTML = "Bewolkt";
   }
 }
 // media querie in js
@@ -69,7 +69,7 @@ function tekstOverdag(size){
   }
   //het is nacht
   else if(size.matches){
-      document.getElementById("weer").innerHTML = "Nacht, motregen en licht bewolkt";
+      document.getElementById("weer").innerHTML = "Nacht, bewolkt en lichte buien";
   }
 
 };
