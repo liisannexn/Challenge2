@@ -83,7 +83,7 @@ size.addListener(tekstOverdag)
 
 
 //afbeelding maan of zon voor overdag of nacht
-if (dayOrNight > 6 && dayOrNight <= 18) {
+if (dayOrNight > 6 && dayOrNight < 18) {
   document.getElementById("zon").src = "css/images/dayOrNight/Zon.png";
 } else {
   document.getElementById("zon").src = "css/images/dayOrNight/moon.png";
