@@ -84,15 +84,15 @@ size.addListener(tekstOverdag)
 
 //afbeelding maan of zon voor overdag of nacht
 if (dayOrNight > 6 && dayOrNight < 18) {
-  document.getElementById("zon").src = "css/images/dayOrNight/Zon.png";
+  document.getElementById("zon").src = "css/images/dayOrNight/sunnie.png";
 } else {
-  document.getElementById("zon").src = "css/images/dayOrNight/moon.png";
+  document.getElementById("zon").src = "css/images/dayOrNight/maan.png";
 }
 
 // het tonen van de achtergrond afbeelding
 // waarden geven aan de achtergrond afbeelding
 if (dayOrNight >= 6 && dayOrNight < 18) {
-  document.body.style.background = "url('css/images/earthday/earthday.png')";
+  document.body.style.background = "url('css/images/earthday/earthday.jpg')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "150em";
   document.body.style.backgroundPosition ="center";

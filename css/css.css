@@ -39,7 +39,12 @@ h1#clock, p#dag, p#datum, p#weer, p#weer2{
 	display: block;
   margin-left: auto;
   margin-right: auto;
-}
+		animation: rotate 80s infinite linear;
+}	
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }}
 
 @media only screen and (min-width: 834px) and (max-width:1279px){
 	#spacelogo{
